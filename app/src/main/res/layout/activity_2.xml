@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/constrained_layout_padding"
+    tools:context=".Activity2">
+
+    <EditText
+        android:id="@+id/editTextNumber1"
+        android:layout_alignParentTop="true"
+        android:autofillHints="true"
+        android:hint="@string/enter_number_1"
+        style="@style/CustomEditTextStyle"
+        app:layout_constraintBottom_toTopOf="@+id/buttonActivitySum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
+
+    <EditText
+        android:id="@+id/editTextNumber2"
+        android:layout_below="@+id/editTextNumber1"
+        android:layout_marginTop="@dimen/numbers_separation"
+        android:autofillHints="true"
+        android:hint="@string/enter_number_2"
+        style="@style/CustomEditTextStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber1" />
+
+    <Button
+        android:id="@+id/buttonActivitySum"
+        android:layout_below="@+id/editTextNumber2"
+        android:onClick="calculateSum"
+        android:paddingHorizontal="@dimen/custom_button_padding_horizontal"
+        android:layout_marginBottom="@dimen/constrained_layout_padding"
+        android:text="@string/calculate_sum"
+        style="@style/CustomButtonStyle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

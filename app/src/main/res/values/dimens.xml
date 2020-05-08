@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity1_textview_text_size">32sp</dimen>
+    <dimen name="constrained_layout_padding">24dp</dimen>
+    <dimen name="numbers_separation">24dp</dimen>
+    <dimen name="custom_button_padding_horizontal">40dp</dimen>
+    <dimen name="custom_button_text_size">24sp</dimen>
+    <dimen name="custom_edittext_text_size">24sp</dimen>
+</resources>
